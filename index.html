@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .pricingtable{
+              min-height: 550px;
+                width:80%;
+                margin: 150px auto;
+                padding-left: 0px;
+            }
+           .pricingtable > li{
+                float: left;
+                list-style: none;
+                width: 18%;
+                height: 100%;
+                position: relative;
+                transform: scale(1,1);
+                border-top-left-radius: 10px !important;
+                border-top-right-radius: 10px !important;
+            }
+            .pricetag{
+                position: absolute;
+                top:-9px;
+                left: 10px;
+            }
+            .b1{
+                width: 100%;
+                height: 46px;
+                background-image: -webkit-linear-gradient(top,#fbd500,#fcae00);
+                border-bottom: 1px solid #ff8e00;
+            }
+            .b2{
+                width: 100%;
+                height: 110px;
+                background-image: -webkit-linear-gradient(top,#fbd500,#fcae00);
+                border-top: 1px solid #ffec4a;
+                border-bottom: 1px solid #ea8c00;
+            }
+            .bcom{
+                width: 100%;
+                height: 40px;
+            }
+            .blast{
+                width: 100%;
+                height:60px;
+                background-image: -webkit-linear-gradient(top,#f5f5f5,#d0d0d0);
+                border-top:1px solid #d3d3d3;
+                border-bottom: 1px solid #b5b5b5;
+            }
+            .gray{
+                background-color: #e3e3e3;
+            }
+            .white{
+                background-color: #f6f6f6;
+            }
+            .pricingtable > li:hover{
+                transform: scale(1.1,1.1) !important;
+                z-index: 10000;
+            }
+            .pricingtable > li.active{
+                transform: scale(1.1,1.1);
+                z-index: 10000;
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+            }
+            @media only screen and (min-width:501px) and (max-width:999px) {
+                .pricingtable > li{
+                    width: 50%;
+                    margin-bottom: 40px;
+                }
+            }
+            @media only screen and (max-width:500px) {
+                .pricingtable{
+                    width: 98%;
+                }
+                .pricingtable > li{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+            @media only screen and (min-width:501px) {
+                .pricingtable{
+                    width: 95%;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <ul class="pricingtable">
+            <li>
+                <img class="pricetag" width="40" src="img/tag2.png">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3 bcom gray"></div>
+                <div class="b4 bcom white"></div>
+                <div class="b5 bcom gray"></div>
+                <div class="b6 bcom white"></div>
+                <div class="b7 bcom gray"></div>
+                <div class="b8 bcom white"></div>
+                <div class="blast"></div>
+            </li>
+            <li>
+                <img class="pricetag" width="40" src="img/tag2.png">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3 bcom gray"></div>
+                <div class="b4 bcom white"></div>
+                <div class="b5 bcom gray"></div>
+                <div class="b6 bcom white"></div>
+                <div class="b7 bcom gray"></div>
+                <div class="b8 bcom white"></div>
+                <div class="blast"></div>
+            </li>
+            
+                <li class="active">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3 bcom gray"></div>
+                <div class="b4 bcom white"></div>
+                <div class="b5 bcom gray"></div>
+                <div class="b6 bcom white"></div>
+                <div class="b7 bcom gray"></div>
+                <div class="b8 bcom white"></div>
+                <div class="blast"></div>
+            </li>
+            <li>
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3 bcom gray"></div>
+                <div class="b4 bcom white"></div>
+                <div class="b5 bcom gray"></div>
+                <div class="b6 bcom white"></div>
+                <div class="b7 bcom gray"></div>
+                <div class="b8 bcom white"></div>
+                <div class="blast"></div>
+            </li>
+            <li>
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3 bcom gray"></div>
+                <div class="b4 bcom white"></div>
+                <div class="b5 bcom gray"></div>
+                <div class="b6 bcom white"></div>
+                <div class="b7 bcom gray"></div>
+                <div class="b8 bcom white"></div>
+                <div class="blast"></div>
+            </li>
+        </ul>
+    </body>
+</html>
